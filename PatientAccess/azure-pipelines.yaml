@@ -33,7 +33,7 @@ jobs:
       publishJUnitResults: true
       testResultsFiles: '**/surefire-reports/TEST-*.xml'
       goals: 'clean exec:java'
-      options: '-Dexec.args="-h $(host) -u $(username) -p $(password) -c api_config.json -s api-env -f true -returnCodeMapping ${{ parameters.returnCodeMapping }}"'
+      options: '-Dexec.args="-h $(host) -u $(username) -p $(password) -c PatientAccess/api_config.json -s api-env -f true -returnCodeMapping ${{ parameters.returnCodeMapping }}"'
   - task: NodeTool@0
     inputs:
       versionSpec: '12.x'
