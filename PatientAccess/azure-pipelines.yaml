@@ -21,11 +21,11 @@ trigger:
     - PatientAccess
 jobs:
 - job: deploy
-  displayName: Deploy API to Amplify Central and Test 
+  displayName: Deploy API to Axway APIM and Test 
   steps:
   - task: Maven@3
     inputs:
-      mavenPomFile: 'pom.xml'
+      mavenPomFile: 'PatientAccess/pom.xml'
       mavenOptions: '-Xmx3072m'
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.8'
