@@ -2,6 +2,7 @@
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
 parameters:
 - name: returnCodeMapping
   displayName: CLI Return code mapping
@@ -12,8 +13,12 @@ pool:
   vmImage: 'ubuntu-latest'
     
 trigger:
-- master
-
+  branches:
+    include:
+    - main
+  paths:
+    include:
+    - PatientAccess
 jobs:
 - job: deploy
   displayName: Deploy API to Amplify Central and Test 
