@@ -31,7 +31,7 @@
     ],
     "apiDefinition": "PatientAccess.json",
     "image": "PatientAccess.png",
-    "vhost": "phx33.demo.axway.com:8065",
+    "vhost": "phx33.demo.axway.com:8095",
     "tags": {
         "lob": ["FIHR"]
     }
