@@ -31,7 +31,7 @@
     ],
     "apiDefinition": "ProviderDirectory.json",
     "image": "ProviderDirectory.png",
-    "vhost": "phx33.demo.axway.com:8065",
+    "vhost": "phx21.demo.axway.com:8065",
     "backendBasepath": "http://localhost:8095",
     "tags": {
         "lob": ["FIHR"]
